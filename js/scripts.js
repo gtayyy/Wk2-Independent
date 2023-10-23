@@ -1,3 +1,53 @@
+document.addEventListener('DOMContentLoaded', function () {
+	const form = document.getElementById('questionnaire');
+	const resultDiv = document.querySelector('.hidden');
+
+	form.addEventListener('submit', function (e) {
+		e.preventDefault(); 
+
+		// pull user response
+		const siblingsAnswer = document.querySelector('input[name="siblings"]:checked').value;
+		const coffeeAnswer = document.getElementById('drinks').value;
+		const colorAnswer = document.getElementById('color').value;
+		const shotAnswer = document.getElementById('shot').value;
+		const carAnswer = document.querySelector('input[name="car"]:checked').value;
+
+		// Determine language based on the answer
+		let codingLanguage;
+
+		if (siblingsAnswer === 'zero') {
+			codingLanguage = 'Ruby';
+		} else if (siblingsAnswer === 'one') {
+			codingLanguage = 'Python';
+		} else {
+			codingLanguage = 'Rust';
+		}
+
+		// Display result in hidden div
+		resultDiv.innerHTML = `
+			<h2>You should learn this coding language:</h2>
+			<div id="${codingLanguage}">
+				<h2>${codingLanguage}</h2>
+				<!-- Add the relevant image and description here -->
+			</div>
+		`;
+
+		// Show the result
+		resultDiv.style.display = 'block';
+	});
+});
+
+/*
+function getResults(event) {
+	event.preventDefault();
+	let zero = document.getElementById("zero");
+	let one = document.getElementById("one");
+	let 2plus = document.getElementById("2plus");
+}
+
+------
+	
+	
 window.onload = function () {
 	let form = document.querySelector("form");
 	form.onsubmit = function (event) {
