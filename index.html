@@ -14,25 +14,48 @@
 			<br>
 
 			<form> 
-				<p class="q1"><h2> How many siblings do you have? </h1></p>
-				<input type="radio" id="html" name="siblings" value="zero">
-				<label for="html">Zero</label><br>
-				<input type="radio" id="css" name="siblings" value="one">
-				<label for="css">One</label><br>
-				<input type="radio" id="javascript" name="siblings" value="2plus">
-				<label for="javascript">Two or more</label>
+				<p class="q1"><h2> How many siblings do you have? </h2>
+					<input type="radio" id="zero" name="siblings" value="zero">
+					<label for="html">Zero</label><br>
+					<input type="radio" id="one" name="siblings" value="one">
+					<label for="css">One</label><br>
+					<input type="radio" id="2plus" name="siblings" value="2plus">
+					<label for="javascript">Two or more</label>
+				</p><br>
+				
+
+				<p class="q2"><h2> What is your go-to coffee shop order? </h2>
+					<label for="coffee">Choose a drink:</label>
+  				<select name="coffee" id="drinks">
+    			<option value="double'">Double McLovin', extra cream</option>
+    			<option value="psl">Venti iced PSL</option>
+    			<option value="matcha">Mucha Matcha late, extra foam</option>
+  				</select>
+				</p><br>
+
+				<p class="q3"><h2> What is your favorite color? </h2></p>
+				<label for="color"></label>
+				<input id="color" type="text">
 				<br><br>
 
-				<p class="q2"><h2> What is your go-to coffee shop order? </h2></p>
-				<label for="coffee">Choose a drink:</label>
-  			<select name="coffee" id="drinks">
-    		<option value="double'">Double McLovin', extra cream</option>
-    		<option value="psl">Venti iced PSL</option>
-    		<option value="matcha">Mucha Matcha late, extra foam</option>
-  		</select>
-  		<br><br>
+				<p class="q4"><h2> Which would you rather take a shot of? </h2></p>
+				<label for="shot">Choose a shot:</label>
+  			<select name="shot" id="shot">
+    		<option value="ranch'"> Ranch </option>
+    		<option value="soy"> Soy sauce </option>
+    		<option value="mustard"> Mustard </option>
+  			</select>
+  			<br><br>
 
-			<p class <h1>Can You Make a Triangle?</h1> 
-			<label for="sideA">Side A</label>
-  <input type="submit" value="Submit">
+				<p class="q5"><h2> What manufacturer of car would you like to drive? </h2></p>
+				<input type="radio" id="audi" name="car" value="audi">
+				<label for="html"> Audi </label><br>
+				<input type="radio" id="suby" name="car" value="suby">
+				<label for="css"> Subaru </label><br>
+				<input type="radio" id="lr" name="car" value="lr">
+				<label for="javascript"> Land Rover </label>
+				<br><br>
 			</form>
+
+			<p class="result"><h2> You should learn this coding Language </h2></p>
+		</body>
