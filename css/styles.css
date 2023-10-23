@@ -20,3 +20,15 @@ form {
 .submit {
 	text-align: center;
 }
+
+.hidden {
+	text-align: center;
+	font-size: 150%;
+	font-style: oblique;
+	border: 10px;
+	border-style:outset;
+	margin-inline: 100px;
+	background-color: #ff5613;
+	opacity: 0.75;
+	margin-top: 50px;
+}
