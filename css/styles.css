@@ -1,3 +1,18 @@
 .hidden {
 	display: none;
 }
+
+h1 {
+	color: #f9113f;
+	text-align: center;
+	font-size: 300%;
+	text-decoration: underline;
+}
+
+form {
+	border: 10px;
+	border-style: groove;
+	margin-inline: 100px;
+	background-color: #ffcc13;
+	opacity: 0.75;
+}
