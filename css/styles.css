@@ -16,3 +16,7 @@ form {
 	background-color: #ffcc13;
 	opacity: 0.75;
 }
+
+.submit {
+	text-align: center;
+}
