@@ -6,9 +6,17 @@ window.onload = function () {
 		document.getElementById("Python").setAttribute("class", "hidden");
 		document.getElementById("Rust").setAttribute("class", "hidden");
 	}
+
+	const siblings = document.getElementById("siblings").value;
+
+	if (siblings === "zero") {
+		document.getElementById("Ruby").removeAttribute("class");
+	}
+	else if (siblings === "one") {
+		document.getElementById("Python").removeAttribute("class");
+	}
+	else (siblings === "2plus").removeAttribute("class");
 }
-
-
 
 
 
