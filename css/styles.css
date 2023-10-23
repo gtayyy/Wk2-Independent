@@ -17,8 +17,25 @@ form {
 	opacity: 0.75;
 }
 
+#questionnaire {
+	text-align: center;
+}
+
+h2 {
+	color:#f9113f;
+}
+
 .submit {
 	text-align: center;
+}
+
+button {
+	padding-left: 40px;
+	padding-right: 40px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	font-size: larger;
+	color: blue;
 }
 
 .hidden {
